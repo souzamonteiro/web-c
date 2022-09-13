@@ -1,0 +1,455 @@
+{
+    "Program": {
+        "Expression": [{
+            "Statement": {
+                "FunctionDeclaration": {
+                    "Type": {
+                        "TOKEN": "void"
+                    },
+                    "Identifier": "showMessage",
+                    "TOKEN": ["(", ")", "{", "}"],
+                    "Arguments": {
+                        "Expression": {
+                            "Statement": {
+                                "VariableDeclaration": {
+                                    "Type": {
+                                        "TOKEN": "char"
+                                    },
+                                    "TOKEN": "*",
+                                    "Expression": {
+                                        "Operation": {
+                                            "UnaryExpression": {
+                                                "Primary": {
+                                                    "Member": {
+                                                        "Identifier": "msg"
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "Expression": [{
+                        "Operation": {
+                            "UnaryExpression": {
+                                "Primary": {
+                                    "Member": {
+                                        "Identifier": "printf",
+                                        "TOKEN": ["(", ")"],
+                                        "Arguments": {
+                                            "Expression": [{
+                                                "Operation": {
+                                                    "UnaryExpression": {
+                                                        "Primary": {
+                                                            "Value": {
+                                                                "String": "\"%s\""
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }, {
+                                                "Operation": {
+                                                    "UnaryExpression": {
+                                                        "Primary": {
+                                                            "Member": {
+                                                                "Identifier": "msg"
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }],
+                                            "TOKEN": ","
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }, {
+                        "Statement": {
+                            "EmptyStatement": {
+                                "TOKEN": ";"
+                            }
+                        }
+                    }]
+                }
+            }
+        }, {
+            "Statement": {
+                "FunctionDeclaration": {
+                    "Type": {
+                        "TOKEN": "int"
+                    },
+                    "Identifier": "power",
+                    "TOKEN": ["(", ")", "{", "}"],
+                    "Arguments": {
+                        "Expression": {
+                            "Statement": {
+                                "VariableDeclaration": {
+                                    "Type": {
+                                        "TOKEN": "int"
+                                    },
+                                    "Expression": {
+                                        "Operation": {
+                                            "UnaryExpression": {
+                                                "Primary": {
+                                                    "Member": {
+                                                        "Identifier": "x"
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "Expression": [{
+                        "Statement": {
+                            "Return": {
+                                "TOKEN": "return",
+                                "Expression": {
+                                    "Operation": {
+                                        "op": [{
+                                            "UnaryExpression": {
+                                                "Primary": {
+                                                    "Member": {
+                                                        "Identifier": "x"
+                                                    }
+                                                }
+                                            }
+                                        }, {
+                                            "UnaryExpression": {
+                                                "Primary": {
+                                                    "Member": {
+                                                        "Identifier": "x"
+                                                    }
+                                                }
+                                            }
+                                        }],
+                                        "TOKEN": "*"
+                                    }
+                                }
+                            }
+                        }
+                    }, {
+                        "Statement": {
+                            "EmptyStatement": {
+                                "TOKEN": ";"
+                            }
+                        }
+                    }]
+                }
+            }
+        }, {
+            "Operation": {
+                "op": [{
+                    "UnaryExpression": {
+                        "Primary": {
+                            "Member": {
+                                "Identifier": "f",
+                                "TOKEN": ["(", ")"],
+                                "Arguments": {
+                                    "Expression": {
+                                        "Operation": {
+                                            "UnaryExpression": {
+                                                "Primary": {
+                                                    "Member": {
+                                                        "Identifier": "x"
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }, {
+                    "op": [{
+                        "op": [{
+                            "UnaryExpression": {
+                                "Primary": {
+                                    "Value": {
+                                        "Real": "2"
+                                    }
+                                }
+                            }
+                        }, {
+                            "UnaryExpression": {
+                                "Primary": {
+                                    "Member": {
+                                        "Identifier": "x"
+                                    }
+                                }
+                            }
+                        }],
+                        "TOKEN": "*"
+                    }, {
+                        "UnaryExpression": {
+                            "Primary": {
+                                "Value": {
+                                    "Real": "1"
+                                }
+                            }
+                        }
+                    }],
+                    "TOKEN": "+"
+                }],
+                "TOKEN": "="
+            }
+        }, {
+            "Statement": {
+                "EmptyStatement": {
+                    "TOKEN": ";"
+                }
+            }
+        }, {
+            "Statement": {
+                "VariableDeclaration": {
+                    "Type": {
+                        "TOKEN": "int"
+                    },
+                    "Expression": {
+                        "Operation": {
+                            "UnaryExpression": {
+                                "Primary": {
+                                    "Member": {
+                                        "Identifier": "main",
+                                        "TOKEN": ["(", ")"],
+                                        "Arguments": [{
+                                            "Expression": [{
+                                                "Statement": {
+                                                    "VariableDeclaration": {
+                                                        "Type": {
+                                                            "TOKEN": "int"
+                                                        },
+                                                        "Expression": {
+                                                            "Operation": {
+                                                                "UnaryExpression": {
+                                                                    "Primary": {
+                                                                        "Member": {
+                                                                            "Identifier": "argc"
+                                                                        }
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }, {
+                                                "Statement": {
+                                                    "VariableDeclaration": {
+                                                        "Type": {
+                                                            "TOKEN": "char"
+                                                        },
+                                                        "TOKEN": "*",
+                                                        "Expression": {
+                                                            "Operation": {
+                                                                "UnaryExpression": {
+                                                                    "Primary": {
+                                                                        "Member": {
+                                                                            "Identifier": "argv"
+                                                                        }
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }],
+                                            "TOKEN": ","
+                                        }, {
+                                            "Expression": {
+                                                "Operation": {
+                                                    "UnaryExpression": {
+                                                        "Primary": {
+                                                            "Value": {
+                                                                "Matrix": {
+                                                                    "TOKEN": ["[", "]"]
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }]
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }, {
+            "Block": {
+                "TOKEN": ["{", "}"],
+                "Expression": [{
+                    "Operation": {
+                        "UnaryExpression": {
+                            "Primary": {
+                                "Member": {
+                                    "Identifier": "showMessage",
+                                    "TOKEN": ["(", ")"],
+                                    "Arguments": {
+                                        "Expression": {
+                                            "Operation": {
+                                                "UnaryExpression": {
+                                                    "Primary": {
+                                                        "Value": {
+                                                            "String": "\"Hello World!\\n\""
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }, {
+                    "Statement": {
+                        "EmptyStatement": {
+                            "TOKEN": ";"
+                        }
+                    }
+                }, {
+                    "Operation": {
+                        "UnaryExpression": {
+                            "Primary": {
+                                "Member": {
+                                    "Identifier": "printf",
+                                    "TOKEN": ["(", ")"],
+                                    "Arguments": {
+                                        "Expression": [{
+                                            "Operation": {
+                                                "UnaryExpression": {
+                                                    "Primary": {
+                                                        "Value": {
+                                                            "String": "\"%d\\n\""
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }, {
+                                            "Operation": {
+                                                "UnaryExpression": {
+                                                    "Primary": {
+                                                        "Member": {
+                                                            "Identifier": "power",
+                                                            "TOKEN": ["(", ")"],
+                                                            "Arguments": {
+                                                                "Expression": {
+                                                                    "Operation": {
+                                                                        "UnaryExpression": {
+                                                                            "Primary": {
+                                                                                "Value": {
+                                                                                    "Real": "5"
+                                                                                }
+                                                                            }
+                                                                        }
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }],
+                                        "TOKEN": ","
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }, {
+                    "Statement": {
+                        "EmptyStatement": {
+                            "TOKEN": ";"
+                        }
+                    }
+                }, {
+                    "Operation": {
+                        "UnaryExpression": {
+                            "Primary": {
+                                "Member": {
+                                    "Identifier": "printf",
+                                    "TOKEN": ["(", ")"],
+                                    "Arguments": {
+                                        "Expression": [{
+                                            "Operation": {
+                                                "UnaryExpression": {
+                                                    "Primary": {
+                                                        "Value": {
+                                                            "String": "\"%d\\n\""
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }, {
+                                            "Operation": {
+                                                "UnaryExpression": {
+                                                    "Primary": {
+                                                        "Member": {
+                                                            "Identifier": "f",
+                                                            "TOKEN": ["(", ")"],
+                                                            "Arguments": {
+                                                                "Expression": {
+                                                                    "Operation": {
+                                                                        "UnaryExpression": {
+                                                                            "Primary": {
+                                                                                "Value": {
+                                                                                    "Real": "2"
+                                                                                }
+                                                                            }
+                                                                        }
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }],
+                                        "TOKEN": ","
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }, {
+                    "Statement": {
+                        "EmptyStatement": {
+                            "TOKEN": ";"
+                        }
+                    }
+                }, {
+                    "Statement": {
+                        "Return": {
+                            "TOKEN": "return",
+                            "Expression": {
+                                "Operation": {
+                                    "UnaryExpression": {
+                                        "Primary": {
+                                            "Value": {
+                                                "Real": "0"
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }, {
+                    "Statement": {
+                        "EmptyStatement": {
+                            "TOKEN": ";"
+                        }
+                    }
+                }]
+            }
+        }]
+    }
+}

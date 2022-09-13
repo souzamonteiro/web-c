@@ -1,0 +1,836 @@
+{
+    "Program": {
+        "Expression": [{
+            "Statement": {
+                "VariableDeclaration": {
+                    "Qualifier": {
+                        "TOKEN": "short"
+                    },
+                    "Type": {
+                        "TOKEN": "int"
+                    },
+                    "Expression": {
+                        "Operation": {
+                            "op": [{
+                                "UnaryExpression": {
+                                    "Primary": {
+                                        "Member": {
+                                            "Identifier": "a"
+                                        }
+                                    }
+                                }
+                            }, {
+                                "UnaryExpression": {
+                                    "Primary": {
+                                        "Value": {
+                                            "Real": "1"
+                                        }
+                                    }
+                                }
+                            }],
+                            "TOKEN": "="
+                        }
+                    }
+                }
+            }
+        }, {
+            "Statement": {
+                "EmptyStatement": {
+                    "TOKEN": ";"
+                }
+            }
+        }, {
+            "Statement": {
+                "VariableDeclaration": {
+                    "Qualifier": {
+                        "TOKEN": "long"
+                    },
+                    "Type": {
+                        "TOKEN": "int"
+                    },
+                    "Expression": {
+                        "Operation": {
+                            "op": [{
+                                "UnaryExpression": {
+                                    "Primary": {
+                                        "Member": {
+                                            "Identifier": "b"
+                                        }
+                                    }
+                                }
+                            }, {
+                                "UnaryExpression": {
+                                    "Primary": {
+                                        "Value": {
+                                            "Real": "2"
+                                        }
+                                    }
+                                }
+                            }],
+                            "TOKEN": "="
+                        }
+                    }
+                }
+            }
+        }, {
+            "Statement": {
+                "EmptyStatement": {
+                    "TOKEN": ";"
+                }
+            }
+        }, {
+            "Statement": {
+                "VariableDeclaration": {
+                    "Type": {
+                        "TOKEN": "float"
+                    },
+                    "Expression": {
+                        "Operation": {
+                            "op": [{
+                                "UnaryExpression": {
+                                    "Primary": {
+                                        "Member": {
+                                            "Identifier": "c"
+                                        }
+                                    }
+                                }
+                            }, {
+                                "op": [{
+                                    "UnaryExpression": {
+                                        "Primary": {
+                                            "Member": {
+                                                "Identifier": "a"
+                                            }
+                                        }
+                                    }
+                                }, {
+                                    "UnaryExpression": {
+                                        "Primary": {
+                                            "Member": {
+                                                "Identifier": "b"
+                                            }
+                                        }
+                                    }
+                                }],
+                                "TOKEN": "+"
+                            }],
+                            "TOKEN": "="
+                        }
+                    }
+                }
+            }
+        }, {
+            "Statement": {
+                "VariableDeclaration": {
+                    "Type": {
+                        "TOKEN": "double"
+                    },
+                    "Expression": {
+                        "Operation": {
+                            "op": [{
+                                "UnaryExpression": {
+                                    "Primary": {
+                                        "Member": {
+                                            "Identifier": "c"
+                                        }
+                                    }
+                                }
+                            }, {
+                                "op": [{
+                                    "UnaryExpression": {
+                                        "Primary": {
+                                            "Member": {
+                                                "Identifier": "a"
+                                            }
+                                        }
+                                    }
+                                }, {
+                                    "UnaryExpression": {
+                                        "Primary": {
+                                            "Member": {
+                                                "Identifier": "b"
+                                            }
+                                        }
+                                    }
+                                }],
+                                "TOKEN": "-"
+                            }],
+                            "TOKEN": "="
+                        }
+                    }
+                }
+            }
+        }, {
+            "Operation": {
+                "op": [{
+                    "UnaryExpression": {
+                        "Primary": {
+                            "Member": {
+                                "Identifier": "c"
+                            }
+                        }
+                    }
+                }, {
+                    "op": [{
+                        "UnaryExpression": {
+                            "Primary": {
+                                "Member": {
+                                    "Identifier": "a"
+                                }
+                            }
+                        }
+                    }, {
+                        "UnaryExpression": {
+                            "Primary": {
+                                "Member": {
+                                    "Identifier": "b"
+                                }
+                            }
+                        }
+                    }],
+                    "TOKEN": "*"
+                }],
+                "TOKEN": "="
+            }
+        }, {
+            "Operation": {
+                "op": [{
+                    "UnaryExpression": {
+                        "Primary": {
+                            "Member": {
+                                "Identifier": "c"
+                            }
+                        }
+                    }
+                }, {
+                    "op": [{
+                        "UnaryExpression": {
+                            "Primary": {
+                                "Member": {
+                                    "Identifier": "a"
+                                }
+                            }
+                        }
+                    }, {
+                        "UnaryExpression": {
+                            "Primary": {
+                                "Member": {
+                                    "Identifier": "b"
+                                }
+                            }
+                        }
+                    }],
+                    "TOKEN": "/"
+                }],
+                "TOKEN": "="
+            }
+        }, {
+            "Operation": {
+                "op": [{
+                    "UnaryExpression": {
+                        "Primary": {
+                            "Member": {
+                                "Identifier": "c"
+                            }
+                        }
+                    }
+                }, {
+                    "op": [{
+                        "UnaryExpression": {
+                            "Primary": {
+                                "Member": {
+                                    "Identifier": "a"
+                                }
+                            }
+                        }
+                    }, {
+                        "UnaryExpression": {
+                            "Primary": {
+                                "Member": {
+                                    "Identifier": "b"
+                                }
+                            }
+                        }
+                    }],
+                    "TOKEN": "%"
+                }],
+                "TOKEN": "="
+            }
+        }, {
+            "Operation": {
+                "op": [{
+                    "UnaryExpression": {
+                        "Primary": {
+                            "Member": {
+                                "Identifier": "d"
+                            }
+                        }
+                    }
+                }, {
+                    "UnaryExpression": {
+                        "Primary": {
+                            "Value": {
+                                "Array": {
+                                    "TOKEN": ["{", ",", ",", ",", "}"],
+                                    "Element": [{
+                                        "Key": {
+                                            "Identifier": "a"
+                                        },
+                                        "TOKEN": ":",
+                                        "Expression": {
+                                            "Operation": {
+                                                "UnaryExpression": {
+                                                    "Primary": {
+                                                        "Value": {
+                                                            "Real": "1"
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }, {
+                                        "Key": {
+                                            "Identifier": "b"
+                                        },
+                                        "TOKEN": ":",
+                                        "Expression": {
+                                            "Operation": {
+                                                "UnaryExpression": {
+                                                    "Primary": {
+                                                        "Value": {
+                                                            "Real": "2"
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }, {
+                                        "Key": {
+                                            "String": "\"x\""
+                                        },
+                                        "TOKEN": ":",
+                                        "Expression": {
+                                            "Operation": {
+                                                "UnaryExpression": {
+                                                    "Primary": {
+                                                        "Value": {
+                                                            "Real": "3"
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }, {
+                                        "Key": {
+                                            "String": "\"y\""
+                                        },
+                                        "TOKEN": ":",
+                                        "Expression": {
+                                            "Operation": {
+                                                "UnaryExpression": {
+                                                    "Primary": {
+                                                        "Value": {
+                                                            "Real": "4"
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }]
+                                }
+                            }
+                        }
+                    }
+                }],
+                "TOKEN": "="
+            }
+        }, {
+            "Operation": {
+                "op": [{
+                    "UnaryExpression": {
+                        "Primary": {
+                            "Member": {
+                                "Identifier": "a"
+                            }
+                        }
+                    }
+                }, {
+                    "UnaryExpression": {
+                        "Primary": {
+                            "Member": {
+                                "Identifier": "b"
+                            }
+                        }
+                    }
+                }],
+                "TOKEN": "+="
+            }
+        }, {
+            "Operation": {
+                "op": [{
+                    "UnaryExpression": {
+                        "Primary": {
+                            "Member": {
+                                "Identifier": "c"
+                            }
+                        }
+                    }
+                }, {
+                    "UnaryExpression": {
+                        "Primary": {
+                            "Member": {
+                                "Identifier": "b"
+                            }
+                        }
+                    }
+                }],
+                "TOKEN": "-="
+            }
+        }, {
+            "Operation": {
+                "UnaryExpression": {
+                    "Primary": {
+                        "Member": {
+                            "Identifier": "a"
+                        }
+                    },
+                    "TOKEN": "++"
+                }
+            }
+        }, {
+            "Operation": {
+                "UnaryExpression": {
+                    "Primary": {
+                        "Member": {
+                            "Identifier": "b"
+                        }
+                    },
+                    "TOKEN": "--"
+                }
+            }
+        }, {
+            "Operation": {
+                "UnaryExpression": {
+                    "TOKEN": "++",
+                    "Primary": {
+                        "Member": {
+                            "Identifier": "a"
+                        }
+                    }
+                }
+            }
+        }, {
+            "Operation": {
+                "UnaryExpression": {
+                    "TOKEN": "--",
+                    "Primary": {
+                        "Member": {
+                            "Identifier": "b"
+                        }
+                    }
+                }
+            }
+        }, {
+            "Operation": {
+                "op": [{
+                    "UnaryExpression": {
+                        "Primary": {
+                            "Member": {
+                                "Identifier": "a"
+                            }
+                        }
+                    }
+                }, {
+                    "UnaryExpression": {
+                        "Primary": {
+                            "Value": {
+                                "Matrix": {
+                                    "TOKEN": ["[", "]"],
+                                    "Row": {
+                                        "Column": [{
+                                            "Expression": {
+                                                "Operation": {
+                                                    "UnaryExpression": {
+                                                        "Primary": {
+                                                            "Value": {
+                                                                "Real": "1"
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }, {
+                                            "Expression": {
+                                                "Operation": {
+                                                    "UnaryExpression": {
+                                                        "Primary": {
+                                                            "Value": {
+                                                                "Real": "2"
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }, {
+                                            "Expression": {
+                                                "Operation": {
+                                                    "UnaryExpression": {
+                                                        "Primary": {
+                                                            "Value": {
+                                                                "Real": "3"
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }],
+                                        "TOKEN": [",", ","]
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }],
+                "TOKEN": "="
+            }
+        }, {
+            "Operation": {
+                "op": [{
+                    "UnaryExpression": {
+                        "Primary": {
+                            "Member": {
+                                "Identifier": "a",
+                                "TOKEN": ["[", "]", "[", "]"],
+                                "Arguments": [{
+                                    "Expression": {
+                                        "Operation": {
+                                            "UnaryExpression": {
+                                                "Primary": {
+                                                    "Value": {
+                                                        "Real": "1"
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }, {
+                                    "Expression": {
+                                        "Operation": {
+                                            "UnaryExpression": {
+                                                "Primary": {
+                                                    "Value": {
+                                                        "Real": "2"
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }]
+                            }
+                        }
+                    }
+                }, {
+                    "UnaryExpression": {
+                        "Primary": {
+                            "Value": {
+                                "Array": {
+                                    "TOKEN": ["{", ",", "}"],
+                                    "Element": [{
+                                        "Expression": {
+                                            "Operation": {
+                                                "UnaryExpression": {
+                                                    "Primary": {
+                                                        "Value": {
+                                                            "Real": "3"
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }, {
+                                        "Expression": {
+                                            "Operation": {
+                                                "UnaryExpression": {
+                                                    "Primary": {
+                                                        "Value": {
+                                                            "Real": "4"
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }]
+                                }
+                            }
+                        }
+                    }
+                }],
+                "TOKEN": "="
+            }
+        }, {
+            "Operation": {
+                "op": [{
+                    "UnaryExpression": {
+                        "Primary": {
+                            "Member": {
+                                "Identifier": "b",
+                                "TOKEN": ["[", "]"],
+                                "Arguments": {
+                                    "Expression": [{
+                                        "Operation": {
+                                            "UnaryExpression": {
+                                                "Primary": {
+                                                    "Value": {
+                                                        "Real": "1"
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }, {
+                                        "Operation": {
+                                            "UnaryExpression": {
+                                                "Primary": {
+                                                    "Value": {
+                                                        "Real": "2"
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }],
+                                    "TOKEN": ","
+                                }
+                            }
+                        }
+                    }
+                }, {
+                    "UnaryExpression": {
+                        "Primary": {
+                            "Value": {
+                                "Array": {
+                                    "TOKEN": ["{", ",", "}"],
+                                    "Element": [{
+                                        "Expression": {
+                                            "Operation": {
+                                                "UnaryExpression": {
+                                                    "Primary": {
+                                                        "Value": {
+                                                            "Real": "3"
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }, {
+                                        "Expression": {
+                                            "Operation": {
+                                                "UnaryExpression": {
+                                                    "Primary": {
+                                                        "Value": {
+                                                            "Real": "4"
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }]
+                                }
+                            }
+                        }
+                    }
+                }],
+                "TOKEN": "="
+            }
+        }, {
+            "Operation": {
+                "op": [{
+                    "UnaryExpression": {
+                        "Primary": {
+                            "Member": {
+                                "Identifier": "e"
+                            }
+                        }
+                    }
+                }, {
+                    "UnaryExpression": {
+                        "Primary": {
+                            "Value": {
+                                "String": "\"Hello World!\""
+                            }
+                        }
+                    }
+                }],
+                "TOKEN": "="
+            }
+        }, {
+            "Operation": {
+                "op": [{
+                    "UnaryExpression": {
+                        "Primary": {
+                            "Member": {
+                                "Identifier": "f"
+                            }
+                        }
+                    }
+                }, {
+                    "UnaryExpression": {
+                        "Primary": {
+                            "Value": {
+                                "String": "\"Amélia tinha uma maçã. Que fruta você tem?\""
+                            }
+                        }
+                    }
+                }],
+                "TOKEN": "="
+            }
+        }, {
+            "Statement": {
+                "VariableDeclaration": {
+                    "Qualifier": {
+                        "TOKEN": "unsigned"
+                    },
+                    "Type": {
+                        "TOKEN": "char"
+                    },
+                    "Expression": {
+                        "Operation": {
+                            "op": [{
+                                "UnaryExpression": {
+                                    "Primary": {
+                                        "Member": {
+                                            "Identifier": "g"
+                                        }
+                                    }
+                                }
+                            }, {
+                                "UnaryExpression": {
+                                    "Primary": {
+                                        "Value": {
+                                            "Character": "'\\xFF'"
+                                        }
+                                    }
+                                }
+                            }],
+                            "TOKEN": "="
+                        }
+                    }
+                }
+            }
+        }, {
+            "Operation": {
+                "op": [{
+                    "UnaryExpression": {
+                        "Primary": {
+                            "Member": {
+                                "Identifier": "h"
+                            }
+                        }
+                    }
+                }, {
+                    "op": [{
+                        "op": [{
+                            "UnaryExpression": {
+                                "Primary": {
+                                    "Member": {
+                                        "Identifier": "a"
+                                    }
+                                }
+                            }
+                        }, {
+                            "UnaryExpression": {
+                                "Primary": {
+                                    "Value": {
+                                        "Real": "1"
+                                    }
+                                }
+                            }
+                        }],
+                        "TOKEN": ">"
+                    }, {
+                        "op": [{
+                            "UnaryExpression": {
+                                "Primary": {
+                                    "Member": {
+                                        "Identifier": "b"
+                                    }
+                                }
+                            }
+                        }, {
+                            "UnaryExpression": {
+                                "Primary": {
+                                    "Value": {
+                                        "Real": "2"
+                                    }
+                                }
+                            }
+                        }],
+                        "TOKEN": "+"
+                    }, {
+                        "op": [{
+                            "UnaryExpression": {
+                                "Primary": {
+                                    "Member": {
+                                        "Identifier": "c"
+                                    }
+                                }
+                            }
+                        }, {
+                            "UnaryExpression": {
+                                "Primary": {
+                                    "Value": {
+                                        "Real": "1"
+                                    }
+                                }
+                            }
+                        }],
+                        "TOKEN": "-"
+                    }],
+                    "TOKEN": ["?", ":"]
+                }],
+                "TOKEN": "="
+            }
+        }, {
+            "Statement": {
+                "VariableDeclaration": {
+                    "Qualifier": [{
+                        "TOKEN": "unsigned"
+                    }, {
+                        "TOKEN": "long"
+                    }],
+                    "Type": {
+                        "TOKEN": "int"
+                    },
+                    "Expression": {
+                        "Operation": {
+                            "op": [{
+                                "UnaryExpression": {
+                                    "Primary": {
+                                        "Member": {
+                                            "Identifier": "i"
+                                        }
+                                    }
+                                }
+                            }, {
+                                "UnaryExpression": {
+                                    "Primary": {
+                                        "Value": {
+                                            "Real": "0"
+                                        }
+                                    }
+                                }
+                            }],
+                            "TOKEN": "="
+                        }
+                    }
+                }
+            }
+        }, {
+            "Statement": {
+                "EmptyStatement": {
+                    "TOKEN": ";"
+                }
+            }
+        }, {
+            "Comment": "// A comment."
+        }]
+    }
+}
