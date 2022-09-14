@@ -71,14 +71,14 @@ function WebCVM() {
                                             compiledCode.xml += data;
                                         }
                                         var s = new Web_C.XmlSerializer(getXml, true);
-                                        var maiaScriptParser = new Web_C(code, s);
+                                        var languageParser = new Web_C(code, s);
                                         try {
-                                            maiaScriptParser.parse_Program();
+                                            languageParser.parse_Program();
                                         } catch (pe) {
-                                            if (!(pe instanceof maiaScriptParser.ParseException)) {
+                                            if (!(pe instanceof languageParser.ParseException)) {
                                                 throw pe;
                                             } else {
-                                                var parserError = maiaScriptParser.getErrorMessage(pe);
+                                                var parserError = languageParser.getErrorMessage(pe);
                                                 console.log(parserError);
                                                 throw parserError;
                                             }
@@ -112,14 +112,14 @@ function WebCVM() {
                         compiledCode.xml += data;
                     }
                     var s = new Web-C.XmlSerializer(getXml, true);
-                    var maiaScriptParser = new Web-C(code, s);
+                    var languageParser = new Web-C(code, s);
                     try {
-                        maiaScriptParser.parse_Program();
+                        languageParser.parse_Program();
                     } catch (pe) {
-                        if (!(pe instanceof maiaScriptParser.ParseException)) {
+                        if (!(pe instanceof languageParser.ParseException)) {
                             throw pe;
                         } else {
-                            var parserError = maiaScriptParser.getErrorMessage(pe);
+                            var parserError = languageParser.getErrorMessage(pe);
                             console.log(parserError);
                             throw parserError;
                         }
@@ -214,14 +214,14 @@ function WebCVM() {
                 if (typeof inputFile != 'undefined') {
                     var code = read(String(inputFile));
                     var s = new Web_C.XmlSerializer(getXml, false);
-                    var maiaScriptParser = new Web_C(code, s);
+                    var languageParser = new Web_C(code, s);
                     try {
-                        maiaScriptParser.parse_Program();
+                        languageParser.parse_Program();
                     } catch (pe) {
-                        if (!(pe instanceof maiaScriptParser.ParseException)) {
+                        if (!(pe instanceof languageParser.ParseException)) {
                             throw pe;
                         } else {
-                            var parserError = maiaScriptParser.getErrorMessage(pe);
+                            var parserError = languageParser.getErrorMessage(pe);
                             console.log(parserError);
                             throw parserError;
                         }
