@@ -1,0 +1,442 @@
+{
+  "Program": {
+    "Expression": [{
+      "Statement": {
+        "VariableDeclaration": {
+          "Type": {
+            "TOKEN": "char"
+          },
+          "Expression": {
+            "Operation": {
+              "op": [{
+                "UnaryExpression": {
+                  "Primary": {
+                    "Member": {
+                      "Identifier": "o"
+                    }
+                  }
+                }
+              }, {
+                "UnaryExpression": {
+                  "Primary": {
+                    "Value": {
+                      "Character": "'y'"
+                    }
+                  }
+                }
+              }],
+              "TOKEN": "="
+            }
+          }
+        }
+      }
+    }, {
+      "Statement": {
+        "EmptyStatement": {
+          "TOKEN": ";"
+        }
+      }
+    }, {
+      "Statement": {
+        "VariableDeclaration": {
+          "Type": {
+            "TOKEN": "int"
+          },
+          "Expression": {
+            "Operation": {
+              "op": [{
+                "UnaryExpression": {
+                  "Primary": {
+                    "Member": {
+                      "Identifier": "i"
+                    }
+                  }
+                }
+              }, {
+                "UnaryExpression": {
+                  "Primary": {
+                    "Value": {
+                      "Number": "0"
+                    }
+                  }
+                }
+              }],
+              "TOKEN": "="
+            }
+          }
+        }
+      }
+    }, {
+      "Statement": {
+        "EmptyStatement": {
+          "TOKEN": ";"
+        }
+      }
+    }, {
+      "Statement": {
+        "If": {
+          "TOKEN": ["if", "(", ")"],
+          "Expression": [{
+            "Operation": {
+              "op": [{
+                "UnaryExpression": {
+                  "Primary": {
+                    "Member": {
+                      "Identifier": "o"
+                    }
+                  }
+                }
+              }, {
+                "UnaryExpression": {
+                  "Primary": {
+                    "Value": {
+                      "Character": "'y'"
+                    }
+                  }
+                }
+              }],
+              "TOKEN": "=="
+            }
+          }, {
+            "Block": {
+              "TOKEN": ["{", "}"],
+              "Expression": [{
+                "Operation": {
+                  "UnaryExpression": {
+                    "Primary": {
+                      "Member": {
+                        "Identifier": "printf",
+                        "TOKEN": ["(", ")"],
+                        "Arguments": {
+                          "Expression": {
+                            "Operation": {
+                              "UnaryExpression": {
+                                "Primary": {
+                                  "Value": {
+                                    "String": "\"You chose yes (y)!\\n\""
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }, {
+                "Statement": {
+                  "EmptyStatement": {
+                    "TOKEN": ";"
+                  }
+                }
+              }, {
+                "Operation": {
+                  "UnaryExpression": {
+                    "Primary": {
+                      "Member": {
+                        "Identifier": "i"
+                      }
+                    },
+                    "TOKEN": "++"
+                  }
+                }
+              }, {
+                "Statement": {
+                  "EmptyStatement": {
+                    "TOKEN": ";"
+                  }
+                }
+              }]
+            }
+          }],
+          "Else": {
+            "TOKEN": "else",
+            "Expression": {
+              "Statement": {
+                "If": {
+                  "TOKEN": ["if", "(", ")"],
+                  "Expression": [{
+                    "Operation": {
+                      "op": [{
+                        "UnaryExpression": {
+                          "Primary": {
+                            "Member": {
+                              "Identifier": "o"
+                            }
+                          }
+                        }
+                      }, {
+                        "UnaryExpression": {
+                          "Primary": {
+                            "Value": {
+                              "Character": "'n'"
+                            }
+                          }
+                        }
+                      }],
+                      "TOKEN": "=="
+                    }
+                  }, {
+                    "Block": {
+                      "TOKEN": ["{", "}"],
+                      "Expression": [{
+                        "Operation": {
+                          "UnaryExpression": {
+                            "Primary": {
+                              "Member": {
+                                "Identifier": "printf",
+                                "TOKEN": ["(", ")"],
+                                "Arguments": {
+                                  "Expression": {
+                                    "Operation": {
+                                      "UnaryExpression": {
+                                        "Primary": {
+                                          "Value": {
+                                            "String": "\"You chose no (n)!\\n\""
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }, {
+                        "Statement": {
+                          "EmptyStatement": {
+                            "TOKEN": ";"
+                          }
+                        }
+                      }, {
+                        "Operation": {
+                          "UnaryExpression": {
+                            "Primary": {
+                              "Member": {
+                                "Identifier": "i"
+                              }
+                            },
+                            "TOKEN": "--"
+                          }
+                        }
+                      }, {
+                        "Statement": {
+                          "EmptyStatement": {
+                            "TOKEN": ";"
+                          }
+                        }
+                      }]
+                    }
+                  }],
+                  "Else": {
+                    "TOKEN": "else",
+                    "Expression": {
+                      "Block": {
+                        "TOKEN": ["{", "}"],
+                        "Expression": [{
+                          "Operation": {
+                            "UnaryExpression": {
+                              "Primary": {
+                                "Member": {
+                                  "Identifier": "printf",
+                                  "TOKEN": ["(", ")"],
+                                  "Arguments": {
+                                    "Expression": {
+                                      "Operation": {
+                                        "UnaryExpression": {
+                                          "Primary": {
+                                            "Value": {
+                                              "String": "\"Invalid option!\\n\""
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }, {
+                          "Statement": {
+                            "EmptyStatement": {
+                              "TOKEN": ";"
+                            }
+                          }
+                        }]
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }, {
+      "Statement": {
+        "Switch": {
+          "TOKEN": ["switch", "(", ")", "{", "}"],
+          "Expression": {
+            "Operation": {
+              "UnaryExpression": {
+                "Primary": {
+                  "Member": {
+                    "Identifier": "o"
+                  }
+                }
+              }
+            }
+          },
+          "Case": [{
+            "TOKEN": ["case", ":"],
+            "Expression": [{
+              "Operation": {
+                "UnaryExpression": {
+                  "Primary": {
+                    "Value": {
+                      "Character": "'s'"
+                    }
+                  }
+                }
+              }
+            }, {
+              "Operation": {
+                "UnaryExpression": {
+                  "Primary": {
+                    "Member": {
+                      "Identifier": "printf",
+                      "TOKEN": ["(", ")"],
+                      "Arguments": {
+                        "Expression": {
+                          "Operation": {
+                            "UnaryExpression": {
+                              "Primary": {
+                                "Value": {
+                                  "String": "\"You chose yes (y)!\\n\""
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }, {
+              "Statement": {
+                "EmptyStatement": {
+                  "TOKEN": ";"
+                }
+              }
+            }, {
+              "Statement": {
+                "Break": {
+                  "TOKEN": "break"
+                }
+              }
+            }, {
+              "Statement": {
+                "EmptyStatement": {
+                  "TOKEN": ";"
+                }
+              }
+            }]
+          }, {
+            "TOKEN": ["case", ":"],
+            "Expression": [{
+              "Operation": {
+                "UnaryExpression": {
+                  "Primary": {
+                    "Value": {
+                      "Character": "'n'"
+                    }
+                  }
+                }
+              }
+            }, {
+              "Operation": {
+                "UnaryExpression": {
+                  "Primary": {
+                    "Member": {
+                      "Identifier": "printf",
+                      "TOKEN": ["(", ")"],
+                      "Arguments": {
+                        "Expression": {
+                          "Operation": {
+                            "UnaryExpression": {
+                              "Primary": {
+                                "Value": {
+                                  "String": "\"You chose no (n)!\\n\""
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }, {
+              "Statement": {
+                "EmptyStatement": {
+                  "TOKEN": ";"
+                }
+              }
+            }, {
+              "Statement": {
+                "Break": {
+                  "TOKEN": "break"
+                }
+              }
+            }, {
+              "Statement": {
+                "EmptyStatement": {
+                  "TOKEN": ";"
+                }
+              }
+            }]
+          }],
+          "Default": {
+            "TOKEN": ["default", ":"],
+            "Expression": [{
+              "Operation": {
+                "UnaryExpression": {
+                  "Primary": {
+                    "Member": {
+                      "Identifier": "printf",
+                      "TOKEN": ["(", ")"],
+                      "Arguments": {
+                        "Expression": {
+                          "Operation": {
+                            "UnaryExpression": {
+                              "Primary": {
+                                "Value": {
+                                  "String": "\"Invalid option!\\n\""
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }, {
+              "Statement": {
+                "EmptyStatement": {
+                  "TOKEN": ";"
+                }
+              }
+            }]
+          }
+        }
+      }
+    }]
+  }
+}
