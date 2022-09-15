@@ -13,7 +13,7 @@ cp build/libc.js js/
 
 chmod 755 bin/*
 
-jsdoc -d ./docs ./package.json ./src
+#jsdoc -d ./docs ./package.json ./src
 
 mkdir docs/grammar
 cp -r grammar/Web-C.xhtml docs/grammar
